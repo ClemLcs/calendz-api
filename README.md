@@ -24,11 +24,11 @@ L'API de calendz est développée avec les frameworks et outils suivants* :
 
 | Librairie      | Version | Description                                                                             |
 |----------------|---------|-----------------------------------------------------------------------------------------|
-| [Node.js]      | 18.13.0 | Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.                |
+| [Node.js]      | 18.17.1 | Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.                |
 | [Express]      | 4.18.2  | Fast, unopinionated, minimalist web framework for Node.js                               |
-| [Mongoose]     | 6.8.4   | Elegant MongoDB object modeling for Node.js                                             |
-| [JsonWebToken] | 9.0.0   | Industry standard RFC 7519 method for representing claims securely between two parties. |
-| [Nodemailer]   | 6.9.0   | Nodemailer is a module for Node.js applications to allow easy as cake email sending.    |
+| [Mongoose]     | 7.4.5   | Elegant MongoDB object modeling for Node.js                                             |
+| [JsonWebToken] | 9.0.1   | Industry standard RFC 7519 method for representing claims securely between two parties. |
+| [Nodemailer]   | 6.9.4   | Nodemailer is a module for Node.js applications to allow easy as cake email sending.    |
 
 **(Liste non exhaustive, uniquement les librairies principales sont présentées)*
 
@@ -62,6 +62,17 @@ L'API de calendz est développée avec les frameworks et outils suivants* :
         JWT_EXPIRATION_REFRESH=30
         JWT_RAW_TOKEN=imasecret
 
+        #===========================================
+        # If you used sendingblue, keep this section
+        #===========================================
+        MAILER_ENABLED=true
+        MAILER_API_KEY=aValidKey
+        MAILER_DOMAIN=aValidDomain
+        MAILER_HOST=api.mailgun.net
+
+        #==============================================
+        # If you used an SMTP Server, keep this section
+        #==============================================
         MAILER_ENABLED=true
         MAILER_USE_TLS=true
         MAILER_PORT=4221
